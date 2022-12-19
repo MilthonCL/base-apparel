@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-
+    "build": "postcss --watch css/styles.css -o docs/css/styles.min.css  --verbose"
   },
   "keywords": [],
   "author": "",
