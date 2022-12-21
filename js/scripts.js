@@ -1,14 +1,17 @@
 const form = document.getElementById('form');
+// const submitButton = document.getElementById('submitButton');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
 const errorIcon = document.getElementById('error-icon');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
+  console.log('clic');
 
   if (validateEmail(email.value)) {
     errorIcon.style.display = 'none';
     message.style.display = 'none';
+    form.submit();
   } else {
     errorIcon.style.display = 'block';
     message.style.display = 'block';
