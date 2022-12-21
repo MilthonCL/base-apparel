@@ -106,11 +106,10 @@ input {
   padding: 0.5em 0 0.5em 2em;
   outline: none;
   border: none;
-  /* color: currentColor; */
 }
 
 input[type='email'] {
-  width: 300px;
+  width: 350px;
   height: 50px;
   border-top: 1px;
   border-right: 0;
@@ -122,7 +121,7 @@ input[type='email'] {
   background: linear-gradient(135deg, hsl(0 0% 100% / 1), hsl(0 100% 98% / 1));
 }
 
-input[type='submit'] {
+/* input[type='submit'] {
   position: relative;
   width: 70px;
   height: 50px;
@@ -133,7 +132,7 @@ input[type='submit'] {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-}
+} */
 
 input[type='submit']:hover {
   transform: scale(1.1);
@@ -151,7 +150,7 @@ input[type='email']:focus:hover {
   display: none;
   position: absolute;
   bottom: 0.8em;
-  right: 2em;
+  right: 2.5em;
 }
 
 .validate-message {
@@ -160,6 +159,21 @@ input[type='email']:focus:hover {
   bottom: -2em;
   left: 0;
   color: var(--info);
+}
+
+.btn {
+  position: relative;
+  padding: 0.7em;
+  margin-top: 2em;
+  margin-left: -2em;
+  width: 60px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  background: var(--color-button);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 769px) {
@@ -214,6 +228,11 @@ input[type='email']:focus:hover {
   input[type='submit'] {
     width: 90px;
     height: 50px;
+  }
+
+  .btn:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 8px var(--button-shadow);
   }
 
   ::placeholder {

@@ -1,5 +1,4 @@
 const form = document.getElementById('form');
-// const submitButton = document.getElementById('submitButton');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
 const errorIcon = document.getElementById('error-icon');
